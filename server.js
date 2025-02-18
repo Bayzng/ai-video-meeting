@@ -57,7 +57,7 @@ io.on('connection', (socket) => {
 
 const sendEmailInvitation = async (recipientEmail, meetingRoomId) => {
     try {
-        const meetingLink = `https://letmeet.vercel.app/${meetingRoomId}`;  
+        const meetingLink = `https://letmeet.vercel.app/meeting/${meetingRoomId}`;
         
         const mailOptions = {
             from: `"Video Meeting Invitation" <${process.env.EMAIL_USER}>`,
